@@ -47,6 +47,7 @@ a:hover {
 	flex-direction: column;
 	justify-content: center;
 	min-height: 100vh;
+	max-height: max-content;
 }
 
 
@@ -54,7 +55,6 @@ a:hover {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	height: 350px;
 }
 
 .avatar__img {
@@ -72,11 +72,19 @@ a:hover {
 }
 
 .links {
-	width: 450px;
+	max-width: 450px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	list-style: none;
+}
+
+.link a {
+	width: 85px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .link__img {
@@ -102,6 +110,7 @@ a:hover {
 .return__link a {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
 }
 
 .return__link a:hover .home {
@@ -120,7 +129,4 @@ a:hover {
 	transition: all .3s;
 }
 
-.contacts2 {
-	margin: 0 auto;
-	transform: scale(0.85);
-}
+.contacts .links {}
