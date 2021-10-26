@@ -41,11 +41,12 @@ a:hover {
 }
 
 .container {
-	width: 850px;
+	max-width: 850px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	min-height: 100vh;
 }
 
 
